@@ -52,7 +52,7 @@ export class CurrentWeather extends Component {
         };
 
         // TODO: API details can be changed here.
-        fetch('https://api.openweathermap.org/data/2.5/weather?q=Seattle,us&APPID=583bebf25e5677d021852f2d1e39f8fe')
+        fetch('api/OpenWeatherMapController/CurrentWeather')
             .then(response => {
                 if (response.ok) {
                     return response.json();
